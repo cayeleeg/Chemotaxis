@@ -24,18 +24,18 @@ class Bacteria {
   }
   void move() {
     myX = myX + (int)(Math.random()*20)-8;
-    myY = myY + (int)(Math.random()*20)-10;
+    myY = myY + (int)(Math.random()*20)-8;
     if (mouseX > myX) {
-      myX = myX + mySize/((int)(Math.random()*10)+5);
+      myX = myX + mySize/((int)(Math.random()*10)+6);
     }
     if (mouseX < myX) {
-      myX = myX - mySize/((int)(Math.random()*10)+5);
+      myX = myX - mySize/((int)(Math.random()*10)+2);
     }
     if (mouseY > myY) {
-      myY = myY + mySize/((int)(Math.random()*10)+5);
+      myY = myY + mySize/((int)(Math.random()*10)+6);
     }
     if (mouseY < myY) {
-      myY = myY - mySize/((int)(Math.random()*10)+5);
+      myY = myY - mySize/((int)(Math.random()*10)+2);
     }
   }
   void show() {
